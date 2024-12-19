@@ -94,15 +94,15 @@ cd bfs
 ```
 START
 start gen graph...ok!
-iter 0  duration_par    2.23627sec      duration_seq    3.91483sec
-iter 1  duration_par    2.3337sec       duration_seq    3.77035sec
-iter 2  duration_par    2.38219sec      duration_seq    3.78255sec
-iter 3  duration_par    2.22452sec      duration_seq    3.60105sec
-iter 4  duration_par    2.24073sec      duration_seq    3.58398sec
+iter 0  duration_par    38.7139sec      duration_seq    124.437sec
+iter 1  duration_par    42.5075sec      duration_seq    122.055sec
+iter 2  duration_par    42.7534sec      duration_seq    121.375sec
+iter 3  duration_par    42.6268sec      duration_seq    116.135sec
+iter 4  duration_par    42.7108sec      duration_seq    124.312sec
 
 
-average_time_seq        3.73055sec
-average_time_par        2.28348sec
-boost   1.63371
+average_time_seq        121.6628sec
+average_time_par        41.86248sec
+boost   2.90625
 DONE
 ```

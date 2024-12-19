@@ -12,7 +12,7 @@
 #include "par_bfs.hpp"
 
 const int runs = 5;
-const int CUBE_LINEAR_SIZE = 200;
+const int CUBE_LINEAR_SIZE = 500;
 
 
 void clear_graph(std::vector<std::vector<int> >& graph) {
@@ -70,7 +70,7 @@ int main () {
     std::cout << "START\n";
     std::cout << "start gen graph...";
     std::cout.flush();
-    
+
     std::vector<std::vector<int> > graph;
     generate_cubic_graph(graph);
     std::cout << "ok!\n";

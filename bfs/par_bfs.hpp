@@ -19,7 +19,7 @@ namespace par {
 
 
         while (frontier.size() > 0) {
-            parlay::sequence<int> degs(frontier.size() + 1);
+            parlay::sequence<int> degs(frontier.size());
             parlay::parallel_for(0, frontier.size(), 
                 [&](long i){
                     degs[i] = graph[frontier[i]].size();
