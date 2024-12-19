@@ -84,3 +84,25 @@ average_time_par        39.9183sec
 boost   0.265749
 DONE
 ```
+# Qsort
+## Run
+```bash
+cd bfs
+./run.sh
+```
+## Results
+```
+START
+start gen graph...ok!
+iter 0  duration_par    2.23627sec      duration_seq    3.91483sec
+iter 1  duration_par    2.3337sec       duration_seq    3.77035sec
+iter 2  duration_par    2.38219sec      duration_seq    3.78255sec
+iter 3  duration_par    2.22452sec      duration_seq    3.60105sec
+iter 4  duration_par    2.24073sec      duration_seq    3.58398sec
+
+
+average_time_seq        3.73055sec
+average_time_par        2.28348sec
+boost   1.63371
+DONE
+```
