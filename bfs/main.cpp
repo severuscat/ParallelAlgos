@@ -26,6 +26,13 @@ int coord_to_node_id(int i, int j, int k) {
     return i * CUBE_LINEAR_SIZE * CUBE_LINEAR_SIZE + j * CUBE_LINEAR_SIZE + k;
 }
 
+void check_same_result(std::vector<int> seq_res, parlay::sequence<int> par_res) {
+    assert(seq_res.size() == par_res.size());
+    for (int i = 0; i < seq_res.size(); i++) {
+        assert(seq_res[i] == par_res[i]);
+    }
+
+}
 
 
 void generate_cubic_graph(std::vector<std::vector<int> >& graph) {
@@ -105,6 +112,7 @@ int main () {
         auto duration_seq = std::chrono::duration_cast<std::chrono::nanoseconds>(end_seq - start_seq).count() / 1e9;
         time_seq += duration_seq;
         std::cout <<"duration_seq" << "\t" << duration_seq  << "sec\n";
+        check_same_result(result, result_par);
     }
     std::cout << "\n\naverage_time_seq\t" << time_seq / runs << "sec\n";
     std::cout << "average_time_par\t" << time_par / runs << "sec\n";
