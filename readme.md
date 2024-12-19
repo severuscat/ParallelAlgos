@@ -84,7 +84,7 @@ average_time_par        39.9183sec
 boost   0.265749
 DONE
 ```
-# Qsort
+# Bfs
 ## Run
 ```bash
 cd bfs
